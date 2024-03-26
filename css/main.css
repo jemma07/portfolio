@@ -31,10 +31,12 @@ body {
 .section1 {width: 1520px;margin: auto;}
 .section2 {width: 1520px;margin: auto;}
 .section3 {width: 1520px;margin: auto;}
+.section4 {width: 100%;margin: auto;}
+.inner {width: 1520px;margin: auto;}
 .section5 {width: 1520px;margin: auto;}
 .section6 {width: 1520px;margin: auto;}
 .section7 {width: 1520px;margin: auto;}
-.inner {width: 1346px;margin: auto;}
+
 .inner2 {width: 900px;margin: auto;}
 
 
@@ -145,6 +147,7 @@ body {
 .section2 {
   font-size: 180px; font-weight: 300; font-family: 'SBAggro';color: #bdbdbd;
   letter-spacing: normal;
+  margin-bottom: 200px;
 }
 
 .section2 .rightline {
@@ -217,20 +220,20 @@ body {
 } */
 
 .section3 .circle {
-  width: 450px;height: 450px;
+  width: 300px;height: 300px;
   display: flex;flex-direction: column; align-items: center;margin: auto;
   position: relative;
 }
 
 .section3 .c_line {
-  position: absolute;left: 50%;top: 225px;transform: translate(-50%,-50px);
+  position: absolute;left: 50%;top: 150px;transform: translate(-50%,-50px);
   display: block;
-  font-family: 'GmarketSans';font-weight: 500; font-size: 55px; 
+  font-family: 'GmarketSans';font-weight: 500; font-size: 35px; 
   z-index: 2; text-align: center;
 }
 
 .section3 .c_line span {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 /* .section2 .material-symbols-outlined {
@@ -251,7 +254,7 @@ body {
 
 .section3 .circle_word {
   position: relative;
-  width: 450px;height: 450px;
+  width: 300px;height: 300px;
   left: 50%;
   display: flex;justify-content: center;align-items: center;
   transform: translate(-50%, 0);
@@ -283,7 +286,7 @@ body {
   position: absolute;
   left: 50%;
   font-size: 1.2em;
-  transform-origin:0 225px ;
+  transform-origin:0 150px ;
   
 }
 
@@ -293,13 +296,97 @@ body {
 
 /* 섹션 4 */
 
-.section4 {  
+.section4 .inner .button {
+  display: flex;
+  width: 1120px;height: 60px;
+  border: 1px solid #fff;
+  border-radius: 100px;position: relative;
+  margin-bottom: 200px;gap: 20px;
+}
+.section4 .button .focus {
+  width: 170px;height: 60px;
+  background: gold;position: absolute;
+  border-radius: 100px;
 }
 
-.line_text {
+.section4 .button .hash_tag {
+  display: flex; justify-content: space-evenly;
+  align-items: center; text-align: center;
+  font-size: 24px; font-family: 'GmarketSans'; font-weight: 500;
+  color: #fff;
+  /* padding: 0 10px; */
+  z-index: 2;
+}
+
+.section4 .button li {
+  width: 170px;
+  border: 1px solid red;
+}
+
+
+.section4 .pf_thumb {
+  width: 31%;
+  margin-bottom: 70px;
+  /* border: 1px solid greenyellow; */
+}
+.section4 .pf_gutter {
+  width: 3.5%;
+}
+
+.section4 .pf_thumb:nth-child(4n) {
+  width: 980px;
+}
+
+.section4 .portfolio_img {
+  /* display: grid; 
+  column-gap: 50px;row-gap: 70px;
+  grid-template-columns: repeat(3, 1fr); */
+}
+.section4 img{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.section4 img:hover {
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.section4 .pf1 {padding-top: 110px;}
+.section4 .pf3 {padding-top: 70px;}
+.section4 .pf4 {
+  /* border: 1px solid yellow; */
+  width: 100%;
+  display: flex;gap: 40px;
+  align-items: flex-end;
+}
+.section4 .pf4.right {
+  flex-direction: row-reverse;
+}
+.section4 .pf4.left {
+  flex-direction: row;
+}
+.section4 .pf4 a {
+  display: block;
+  width: 60%;
+  border-radius: 300px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.section4 h3{
+  font-size: 35px; font-weight: 500; font-family: 'GmarketSans';
+  margin: 10px 0;
+}
+
+.section4 span{
+  font-size: 18px; font-weight: 300; font-family: 'GmarketSans';
+  color: #FCFF7C;
+}
+
+.section4 .line_text {
   display: flex;gap: 50px;
   align-items: center;
-
 }
 
 .section4 .line_text h2 {
@@ -314,105 +401,30 @@ body {
 }
 
 
-
-
 /* 섹션 5 */
 
 .section5 {
-  display: flex;
-  width: 902px;height: 60.5px;
-  border: 1px solid #fff;
-  border-radius: 100px;position: relative;
-  margin-bottom: 200px;
-}
-.focus {
-  width: 218px;height: 60.5px;
-  background: gold;position: absolute;
-  border-radius: 100px;
-}
-
-.section5 .Hash_tag {
-  position: relative; display: flex; justify-content: space-evenly; align-items: center; text-align: center;
-  font-size: 24px; font-family: 'GmarketSans'; font-weight: 300;
-  color: #fff;
-  padding: 0 10px;z-index: 2;
-}
-
-.section5 li {
-  width: 209px;
-}
-
-
-/* 섹션 6 */
-.section6 {
-  border: 1px solid red;
-}
-
-.section6 .portfolio_img {
-  display: grid; 
-  column-gap: 50px;row-gap: 70px;
-  grid-template-columns: repeat(3, 1fr);
-}
-.section6 img{
-  width: 100%
-}
-.section6 .pf1 {padding-top: 110px;}
-.section6 .pf3 {padding-top: 70px;}
-.section6 .pf4 {
-  grid-column: 1 / 4;
-  display: flex;gap: 40px;
-  align-items: flex-end;
-}
-.section6 .pf4.right {
-  flex-direction: row-reverse;
-}
-.section6 .pf4.left {
-  flex-direction: row;
-}
-.section6 .pf4 a {
-  display: block;
-  border: 1px solid red;
-  border-radius: 300px;
-  width: 60%;height: 400px;overflow: hidden;
-}
-.section6 .pf4 img {}
-
-
-.section6 h3{
-  font-size: 35px; font-weight: 500; font-family: 'GmarketSans';
-  margin: 10px 0;
-}
-
-.section6 h4{
-  font-size: 18px; font-weight: 300; font-family: 'GmarketSans';
-  color: #FCFF7C;
-}
-
-
-/* 섹션 7 */
-
-.section7 {
   padding: 600px 0 200px 0;
 }
 
-.section7 h3 {
+.section5 h3 {
   font-size: 200px; font-weight: 500; font-family: 'SBAggro';
 }
 
 
 
-/* 섹션 8 */
+/* 섹션 6 */
 
 
-.section8 {
+.section6 {
   font-size: 80px; font-weight: 500; font-family: 'GmarketSans';
   position: relative;
 }
-.section8 h4 {
+.section6 h4 {
   display: flex;
 } 
 
-.section8 .marquee_wrap div {
+.section6 .marquee_wrap div {
   white-space: nowrap;
   animation: marquee_left 15s linear infinite;
   padding: 0 20px;
@@ -428,7 +440,7 @@ body {
   }
 }
 
-.section8 .marquee_right div {
+.section6 .marquee_right div {
   animation: marquee_right 10s linear infinite;
 }
 
@@ -442,6 +454,17 @@ body {
 }
 
 
+/* footer */
+footer {
+  width: 100%; height: 100px;
+  display: flex;
+}
+
+footer p {
+  font-size: 16px; font-weight: 300; font-family: 'GmarketSans';
+  color: #fff;
+  align-items: center; margin:auto;
+}
 
 
 

@@ -16,6 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="js/main.js" defer></script>
 
 </head>
@@ -89,7 +90,7 @@
         </section>
       </div>
 
-    <!-- 원형 글자 돌아가는곳 -->
+      <!-- 원형 글자 돌아가는곳 -->
       <section class="section3">
         <div class="line_wrap">
           <div class="line"></div>
@@ -114,206 +115,126 @@
 
 
       <section class="section4">
+        <div class="inner">
+          <div class="button">
+            <div class="focus"></div>
+            <ul class="hash_tag">
+              <li data-filter="*">#all</li>
+              <li data-filter=".brochure">#편집디자인</li>
+              <li data-filter=".banner">#베너디자인</li>
+              <li data-filter=".leaflet">#리플렛</li>
+              <li data-filter=".poster">#포스터</li>
+              <li data-filter=".web">#웹페이지</li>
+            </ul>
+          </div>
+          <div class="portfolio_img">
+            <div class="pf_thumb pf1 brochure">
+              <a href="#"><img src="./img/brochure/brochure1.jpg" alt=""> </a>
+              <h3>편집디자인</h3>
+              <span>2024.01.01</span>
+            </div>
+            <div class="pf_thumb pf2 brochure">
+              <a href="#"><img src="./img/brochure/brochure2.jpg" alt=""> </a>
+              <h3>제목입니다</h3>
+              <span>2024.01.01</span>
+            </div>
+            <div class="pf_thumb pf3 brochure">
+              <a href="#"><img src="./img/brochure/brochure3.jpg" alt=""> </a>
+              <h3>제목입니다</h3>
+              <span>2024.01.01</span>
+            </div>
+            <div class="pf_thumb pf4 left brochure">
+              <a href="#"><img src="./img/brochure/brochure4.jpg" alt=""> </a>
+              <div class="txt">
+                <h3>이벤트 배너</h3>
+                <span>2024.01.01</span>
+              </div>
+            </div>
+            <div class="pf_thumb pf1 brochure">
+              <a href="#"><img src="./img/brochure/brochure5.jpg" alt=""> </a>
+              <h3>제목입니다</h3>
+              <span>2024.01.01</span>
+            </div>
+            <div class="pf_thumb pf2 brochure">
+              <a href="#"><img src="./img/brochure/brochure6.jpg" alt=""> </a>
+              <h3>제목입니다</h3>
+              <span>2024.01.01</span>
+            </div>
+            <div class="pf_thumb pf3 banner">
+              <a href="#"><img src="./img/banner/banner1.jpg" alt=""> </a>
+              <h3>제목입니다</h3>
+              <span>2024.01.01</span>
+            </div>
+            <div class="pf_thumb pf4 right banner">
+              <a href="#"><img src="./img/banner/banner1.jpg" alt=""> </a>
+              <div class="txt">
+                <h3>이벤트 배너</h3>
+                <span>2024.01.01</span>
+              </div>
+            </div>
+            <div class="pf_thumb pf1 banner">
+              <a href="#"><img src="./img/banner/banner2.jpg" alt=""> </a>
+              <h3>제목입니다</h3>
+              <span>2024.01.01</span>
+            </div>
+            <div class="pf_thumb pf2 banner">
+              <a href="#"><img src="./img/banner/banner3.jpg" alt=""> </a>
+              <h3>제목입니다</h3>
+              <span>2024.01.01</span>
+            </div>
+            <div class="pf_thumb pf3 banner">
+              <a href="#"><img src="./img/banner/banner4.jpg" alt=""> </a>
+              <h3>제목입니다</h3>
+              <span>2024.01.01</span>
+            </div>
+            <div class="pf_thumb pf4 left banner">
+              <a href="#"><img src="./img/poster/poster5.jpg" alt=""> </a>
+              <div class="txt">
+                <h3>이벤트 배너</h3>
+                <span>2024.01.01</span> 
+              </div>
+            </div>
+            <div class="pf_thumb pf1 banner">
+              <a href="#"><img src="./img/poster/poster6.jpg" alt=""> </a>
+              <h3>제목입니다</h3>
+              <span>2024.01.01</span>
+            </div>
+            <div class="pf_thumb pf2 banner">
+              <a href="#"><img src="./img/banner/banner5.jpg" alt=""> </a>
+              <h3>제목입니다</h3>
+              <span>2024.01.01</span>
+            </div>
+            <div class="pf_thumb pf3 leaflet">
+              <a href="#"><img src="./img/leaflet/leaflet4.jpg" alt=""> </a>
+              <h3>제목입니다</h3>
+              <span>2024.01.01</span>
+            </div>
+            <div class="pf_thumb pf4 right leaflet">
+              <a href="#"><img src="./img/leaflet/leaflet5.jpg" alt=""> </a>
+              <div class="txt">
+                <h3>이벤트 배너</h3>
+                <span>2024.01.01</span>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="line_text">
           <h2>PORTFOLIO</h2>
             <span class="material-symbols-outlined">
               filter_vintage
             </span>
         </div>
-
-
       </section>
-      
+
+
       <section class="section5">
-
-      </section>
-
-      <section class="section6">
-        <div class="portfolio_img">
-          <div class="pf_thumb pf1">
-            <a href="#"><img src="./img/mae-mu-8Vh6ulKc50o-unsplash.jpg" alt=""> </a>
-            <h3>제목입니다</h3>
-            <h4>123456789</h4>
-          </div>
-          <div class="pf_thumb pf2">
-            <a href="#"><img src="./img/alex-seinet-8dmtbpJJJ7k-unsplash.jpg" alt=""> </a>
-            <h3>제목입니다</h3>
-            <h4>123456789</h4>
-          </div>
-          <div class="pf_thumb pf3">
-            <a href="#"><img src="./img/micheile-henderson-WP81F5Tj2ME-unsplash.jpg" alt=""> </a>
-            <h3>제목입니다</h3>
-            <h4>123456789</h4>
-          </div>
-          <div class="pf_thumb pf4 left">
-            <a href="#"><img src="./img/micheile-henderson-WP81F5Tj2ME-unsplash.jpg" alt=""> </a>
-            <div class="txt">
-              <h3>이벤트 배너</h3>
-              <h4>2024.01.01</h4>
-            </div>
-          </div>
-          <div class="pf_thumb pf1">
-            <a href="#"><img src="./img/mae-mu-8Vh6ulKc50o-unsplash.jpg" alt=""> </a>
-            <h3>제목입니다</h3>
-            <h4>123456789</h4>
-          </div>
-          <div class="pf_thumb pf2">
-            <a href="#"><img src="./img/alex-seinet-8dmtbpJJJ7k-unsplash.jpg" alt=""> </a>
-            <h3>제목입니다</h3>
-            <h4>123456789</h4>
-          </div>
-          <div class="pf_thumb pf3">
-            <a href="#"><img src="./img/micheile-henderson-WP81F5Tj2ME-unsplash.jpg" alt=""> </a>
-            <h3>제목입니다</h3>
-            <h4>123456789</h4>
-          </div>
-          <div class="pf_thumb pf4 right">
-            <a href="#"><img src="./img/micheile-henderson-WP81F5Tj2ME-unsplash.jpg" alt=""> </a>
-            <div class="txt">
-              <h3>이벤트 배너</h3>
-              <h4>2024.01.01</h4>
-            </div>
-          </div>
-          <div class="pf_thumb pf1">
-            <a href="#"><img src="./img/mae-mu-8Vh6ulKc50o-unsplash.jpg" alt=""> </a>
-            <h3>제목입니다</h3>
-            <h4>123456789</h4>
-          </div>
-          <div class="pf_thumb pf2">
-            <a href="#"><img src="./img/alex-seinet-8dmtbpJJJ7k-unsplash.jpg" alt=""> </a>
-            <h3>제목입니다</h3>
-            <h4>123456789</h4>
-          </div>
-          <div class="pf_thumb pf3">
-            <a href="#"><img src="./img/micheile-henderson-WP81F5Tj2ME-unsplash.jpg" alt=""> </a>
-            <h3>제목입니다</h3>
-            <h4>123456789</h4>
-          </div>
-          <div class="pf_thumb pf4">
-            <a href="#"><img src="./img/micheile-henderson-WP81F5Tj2ME-unsplash.jpg" alt=""> </a>
-            <div class="txt">
-              <h3>이벤트 배너</h3>
-              <h4>2024.01.01</h4>
-            </div>
-          </div>
-          <div class="pf_thumb pf1">
-            <a href="#"><img src="./img/mae-mu-8Vh6ulKc50o-unsplash.jpg" alt=""> </a>
-            <h3>제목입니다</h3>
-            <h4>123456789</h4>
-          </div>
-          <div class="pf_thumb pf2">
-            <a href="#"><img src="./img/alex-seinet-8dmtbpJJJ7k-unsplash.jpg" alt=""> </a>
-            <h3>제목입니다</h3>
-            <h4>123456789</h4>
-          </div>
-          <div class="pf_thumb pf3">
-            <a href="#"><img src="./img/micheile-henderson-WP81F5Tj2ME-unsplash.jpg" alt=""> </a>
-            <h3>제목입니다</h3>
-            <h4>123456789</h4>
-          </div>
-          <div class="pf_thumb pf4">
-            <a href="#"><img src="./img/micheile-henderson-WP81F5Tj2ME-unsplash.jpg" alt=""> </a>
-            <div class="txt">
-              <h3>이벤트 배너</h3>
-              <h4>2024.01.01</h4>
-            </div>
-          </div><div class="pf_thumb pf1">
-            <a href="#"><img src="./img/mae-mu-8Vh6ulKc50o-unsplash.jpg" alt=""> </a>
-            <h3>제목입니다</h3>
-            <h4>123456789</h4>
-          </div>
-          <div class="pf_thumb pf2">
-            <a href="#"><img src="./img/alex-seinet-8dmtbpJJJ7k-unsplash.jpg" alt=""> </a>
-            <h3>제목입니다</h3>
-            <h4>123456789</h4>
-          </div>
-          <div class="pf_thumb pf3">
-            <a href="#"><img src="./img/micheile-henderson-WP81F5Tj2ME-unsplash.jpg" alt=""> </a>
-            <h3>제목입니다</h3>
-            <h4>123456789</h4>
-          </div>
-          <div class="pf_thumb pf4">
-            <a href="#"><img src="./img/micheile-henderson-WP81F5Tj2ME-unsplash.jpg" alt=""> </a>
-            <div class="txt">
-              <h3>이벤트 배너</h3>
-              <h4>2024.01.01</h4>
-            </div>
-          </div><div class="pf_thumb pf1">
-            <a href="#"><img src="./img/mae-mu-8Vh6ulKc50o-unsplash.jpg" alt=""> </a>
-            <h3>제목입니다</h3>
-            <h4>123456789</h4>
-          </div>
-          <div class="pf_thumb pf2">
-            <a href="#"><img src="./img/alex-seinet-8dmtbpJJJ7k-unsplash.jpg" alt=""> </a>
-            <h3>제목입니다</h3>
-            <h4>123456789</h4>
-          </div>
-          <div class="pf_thumb pf3">
-            <a href="#"><img src="./img/micheile-henderson-WP81F5Tj2ME-unsplash.jpg" alt=""> </a>
-            <h3>제목입니다</h3>
-            <h4>123456789</h4>
-          </div>
-          <div class="pf_thumb pf4">
-            <a href="#"><img src="./img/micheile-henderson-WP81F5Tj2ME-unsplash.jpg" alt=""> </a>
-            <div class="txt">
-              <h3>이벤트 배너</h3>
-              <h4>2024.01.01</h4>
-            </div>
-          </div><div class="pf_thumb pf1">
-            <a href="#"><img src="./img/mae-mu-8Vh6ulKc50o-unsplash.jpg" alt=""> </a>
-            <h3>제목입니다</h3>
-            <h4>123456789</h4>
-          </div>
-          <div class="pf_thumb pf2">
-            <a href="#"><img src="./img/alex-seinet-8dmtbpJJJ7k-unsplash.jpg" alt=""> </a>
-            <h3>제목입니다</h3>
-            <h4>123456789</h4>
-          </div>
-          <div class="pf_thumb pf3">
-            <a href="#"><img src="./img/micheile-henderson-WP81F5Tj2ME-unsplash.jpg" alt=""> </a>
-            <h3>제목입니다</h3>
-            <h4>123456789</h4>
-          </div>
-          <div class="pf_thumb pf4">
-            <a href="#"><img src="./img/micheile-henderson-WP81F5Tj2ME-unsplash.jpg" alt=""> </a>
-            <div class="txt">
-              <h3>이벤트 배너</h3>
-              <h4>2024.01.01</h4>
-            </div>
-          </div><div class="pf_thumb pf1">
-            <a href="#"><img src="./img/mae-mu-8Vh6ulKc50o-unsplash.jpg" alt=""> </a>
-            <h3>제목입니다</h3>
-            <h4>123456789</h4>
-          </div>
-          <div class="pf_thumb pf2">
-            <a href="#"><img src="./img/alex-seinet-8dmtbpJJJ7k-unsplash.jpg" alt=""> </a>
-            <h3>제목입니다</h3>
-            <h4>123456789</h4>
-          </div>
-          <div class="pf_thumb pf3">
-            <a href="#"><img src="./img/micheile-henderson-WP81F5Tj2ME-unsplash.jpg" alt=""> </a>
-            <h3>제목입니다</h3>
-            <h4>123456789</h4>
-          </div>
-          <div class="pf_thumb pf4">
-            <a href="#"><img src="./img/micheile-henderson-WP81F5Tj2ME-unsplash.jpg" alt=""> </a>
-            <div class="txt">
-              <h3>이벤트 배너</h3>
-              <h4>2024.01.01</h4>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      <section class="section7">
         <h3>About <br>Me</h3>
         <div class="resume_link">
           <a href="./etc/resume.hwp">♣</a>
         </div>
       </section>
 
-      <section class="section8">
+      <section class="section6">
         <hr>
         <h4 class="marquee_wrap">
           <div>bak jem ma</div>
@@ -328,18 +249,13 @@
       </section>
 
 
-      <div class="focus"></div>
-      <ul class="Hash_tag">
-        <li>#all</li>
-        <li>#편집디자인</li>
-        <li>#베너디자인</li>
-        <li>#웹페이지</li>
-      </ul>
+
+
 
     </main>
 
     <footer>
-      <p>&copy; pjm. All Rights Reserved</p>
+      <p>&copy; PJM. All Rights Reserved</p>
     </footer>
   </div>
 

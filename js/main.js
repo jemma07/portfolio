@@ -68,7 +68,7 @@ function flow() {
       elm.appendChild(cloneElement);
     }
   })
-  console.log(flowElement)
+  // console.log(flowElement)
   // flowContainer.innerHTML = ''
     
   // for (let i = 2; i < flowLength; i++) {
@@ -124,13 +124,28 @@ gsap.to(".line", {
   },
 });
 
+// 포폴 썸네일
+const $grid = $('.portfolio_img').isotope({
+  // options
+  itemSelector: '.pf_thumb',
+  layoutMode: 'fitRows',
+  fitRows: {
+    gutter: 50
+  }
+});
+$('.hash_tag').on('click', 'li', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({filter: filterValue});
+  console.log(filterValue)
+});
 
-//포트폴리오 탭
-$('.Hash_tag li').click(function() {
-  const i = $(this).index();
-  const w = 218;
-  const pos = 218 * i;
 
-  $('.focus').animate({left: pos}, 300)
-  console.log($(this).offset().left)
-})
+// //포트폴리오 탭
+// $('.Hash_tag li').click(function() {
+//   const i = $(this).index();
+//   const w = 218;
+//   const pos = 218 * i;
+
+//   $('.focus').animate({left: pos}, 300)
+//   console.log($(this).offset().left)
+// })
