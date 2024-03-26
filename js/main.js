@@ -133,9 +133,21 @@ const $grid = $('.portfolio_img').isotope({
     gutter: 50
   }
 });
-$('.hash_tag').on('click', 'li', function() {
-  var filterValue = $(this).attr('data-filter');
-  $grid.isotope({filter: filterValue});
-  console.log(filterValue)
-});
+// $('.hash_tag').on('click', 'li', function() {
+//   var filterValue = $(this).attr('data-filter');
+//   $grid.isotope({filter: filterValue});
+//   console.log(filterValue)
+// });
 
+//포트폴리오 탭
+$('.hash_tag li').click(function() {
+  const i = $(this).index();
+  const secName = $(this).attr('data-filter')
+  const w = 218;
+  const pos = 218 * i;
+
+  $('.focus').animate({left: pos}, 300)
+  $('.portfolio_img .' + secName).show()
+  $('.portfolio_img section').not('.' + secName).hide()
+  console.log(secName)
+})
