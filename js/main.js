@@ -139,13 +139,3 @@ $('.hash_tag').on('click', 'li', function() {
   console.log(filterValue)
 });
 
-
-// //포트폴리오 탭
-// $('.Hash_tag li').click(function() {
-//   const i = $(this).index();
-//   const w = 218;
-//   const pos = 218 * i;
-
-//   $('.focus').animate({left: pos}, 300)
-//   console.log($(this).offset().left)
-// })
