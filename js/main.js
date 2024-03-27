@@ -10,7 +10,29 @@ $(".util a").click(function(){
   $(this).toggleClass('util_allmeun');
   $('.allmenu_wrap').toggle()
 })
+$(".allmenu a").click(function(){
+  $(".allmenu_wrap").hide()
+  $(".util a").toggleClass('util_allmeun');
+})
+$('.allmenu .dep2 li').click(function() {
+  const i = $(this).index();
+  const secName = $(this).attr('class')
+  const w = 200;
+  const pos = 200 * i;
 
+  console.log(i)
+
+  $('.focus').animate({left: pos}, 300)
+  $('.portfolio_img .' + secName).css({display:"grid"})
+  $('.portfolio_img .pf_design').not('.' + secName).css({display:"none"})
+  console.log(secName)
+})
+$(".allmenu .brochure").click(function(){
+
+  $('.focus').animate({left: 0}, 300)
+  $('.portfolio_img .brochure').css({display:"grid"})
+  $('.portfolio_img .pf_design').not('.brochure').css({display:"none"})
+})
 // 스크롤 다운 헤더 스타일 변경
 $(window).scroll(function() {
   // console.log($(this).scrollTop())
@@ -45,8 +67,6 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
-
-
 
 
 //흐르는 글자
@@ -125,29 +145,29 @@ gsap.to(".line", {
 });
 
 // 포폴 썸네일
-const $grid = $('.portfolio_img').isotope({
-  // options
-  itemSelector: '.pf_thumb',
-  layoutMode: 'fitRows',
-  fitRows: {
-    gutter: 50
-  }
-});
-// $('.hash_tag').on('click', 'li', function() {
-//   var filterValue = $(this).attr('data-filter');
-//   $grid.isotope({filter: filterValue});
-//   console.log(filterValue)
-// });
+$('.pf_design  img').click(function(e) {
+  e.preventDefault();
+  const thumbName = $(this).attr('src')
+  const newName = thumbName.replace('.jpg', '_detail.png')
+
+  $('.pf_detail').show()
+  $('.detail_box img').attr('src', newName)
+  console.log(newName)
+})
+$('.detail_close').click(function() {
+  $('.pf_detail').hide()
+})
+
 
 //포트폴리오 탭
 $('.hash_tag li').click(function() {
   const i = $(this).index();
   const secName = $(this).attr('data-filter')
-  const w = 218;
-  const pos = 218 * i;
+  const w = 200;
+  const pos = 200 * i;
 
   $('.focus').animate({left: pos}, 300)
-  $('.portfolio_img .' + secName).show()
-  $('.portfolio_img section').not('.' + secName).hide()
+  $('.portfolio_img .' + secName).css({display:"grid"})
+  $('.portfolio_img .pf_design').not('.' + secName).css({display:"none"})
   console.log(secName)
 })

@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./css/main.css">
 
-    <!-- JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script src="js/main.js" defer></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/main.css">
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="js/main.js" defer></script>
 
 </head>
+
 <body>
   <div id="wrap">
     <header id="header">
@@ -39,52 +41,52 @@
         </ul> -->
         <ul id="gnb">
           <li><a href="#">Home</a></li>
-          <li><a href="#">Porfolio</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#portfolio">Porfolio</a></li>
+          <li><a href="#about">About</a></li>
         </ul>
         <div class="util">
-          <a href="#" >
+          <a href="#">
             <span class="bar_1"></span>
             <span class="bar_2"></span>
           </a>
         </div>
         <div class="allmenu_wrap">
           <ul class="allmenu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Porfolio</a>
+            <li> <a href="#home">Home</a></li>
+            <li class="brochure"> <a href="#portfolio">Porfolio</a>
               <ul class="dep2">
-                <li><a href="#">편집디자인</a></li>
-                <li><a href="#">배너디자인</a></li>
-                <li><a href="#">웹디자인</a></li>
-                <li><a href="#">그래픽디자인</a></li>
+                <li class="brochure"><a href="#portfolio">편집디자인</a></li>
+                <li class="banner"><a href="#portfolio">배너디자인</a></li>
+                <li class="leaflet"><a href="#portfolio">리플렛</a></li>
+                <li class="poster"><a href="#portfolio">포스터</a></li>
+                <li class="web"><a href="#portfolio">웹페이지</a></li>
               </ul>
             </li>
-            <li><a href="#">About</a></li>
+            <li> <a href="#about">About</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <style>
-      .text_mask_box {width: 400px;height: 200px;border: 1px solid #FFF;display: flex;justify-content: center;align-items: center;font-family: 'Arial Black';font-size: 80px;margin: auto;background: #000;}
-    </style>
+
     <!-- 본문 -->
     <main id="mainbody">
       <div class="container">
-        <section class="section1">
+        <section id="home" class="section1">
           <h3>2024</h3>
           <div class="text_path">
             <p>Portfolio</p>
           </div>
-          <!-- <span>원형 글자</span> -->
+
         </section>
-        <!-- <section class="section1">
-          <p class="l_text">Portfolio</p>
-        </section> -->
-  
+
+
         <section class="section2">
-          <div class="rightline"> 저는 <div class="r_line"></div></div>
-          <div class="leftline"><strong>새로운</strong><div class="l_line"></div></div>
+          <div class="rightline"> 저는 <div class="r_line"></div>
+          </div>
+          <div class="leftline"><strong>새로운</strong>
+            <div class="l_line"></div>
+          </div>
           <div><strong>도전</strong>을 <strong>시작</strong>하는</div>
           <div><strong>박젬마</strong> <span>입니다</span> </div>
         </section>
@@ -114,7 +116,7 @@
       </section>
 
 
-      <section class="section4">
+      <section class="section4" id="portfolio">
         <div class="inner">
           <div class="button">
             <div class="focus"></div>
@@ -127,110 +129,151 @@
             </ul>
           </div>
           <div class="portfolio_img">
-            <div class="pf_thumb pf1 brochure">
-              <a href="#"><img src="./img/brochure/brochure1.jpg" alt=""> </a>
-              <h2>브로셔-1</h2>
-              <span>2024.01.01</span>
+            <div class="pf_design brochure">
+              <div class="pf_thumb pf1">
+                <a href="#"><img src="./img/brochure/brochure1.jpg" alt=""> </a>
+                <h2>brochure</h2>
+                <span>2024.01.01</span>
+              </div>
+              <div class="pf_thumb pf2">
+                <a href="#"><img src="./img/brochure/brochure2.jpg" alt=""> </a>
+                <h2>brochure</h2>
+                <span>2024.01.01</span>
+              </div>
+              <div class="pf_thumb pf3">
+                <a href="#"><img src="./img/brochure/brochure3.jpg" alt=""> </a>
+                <h2>brochure</h2>
+                <span>2024.01.01</span>
+              </div>
+              <div class="pf_thumb pf4 left">
+                <a href="#"><img src="./img/brochure/brochure4.jpg" alt=""> </a>
+                <div class="txt">
+                  <h2>brochure</h2>
+                  <span>2024.01.01</span>
+                </div>
+              </div>
             </div>
-            <div class="pf_thumb pf3 banner">
-              <a href="#"><img src="./img/banner/banner1.jpg" alt=""> </a>
-              <h2>배너-1</h2>
-              <span>2024.01.01</span>
+
+            <div class="pf_design banner">
+              <div class="pf_thumb pf1">
+                <a href=""><img src="./img/banner/banner1.jpg" alt=""> </a>
+                <h2>banner</h2>
+                <span>2024.01.01</span>
+              </div>
+              <div class="pf_thumb pf2">
+                <a href="#"><img src="./img/banner/banner2.jpg" alt=""> </a>
+                <h2>banner</h2>
+                <span>2024.01.01</span>
+              </div>
+              <div class="pf_thumb pf3">
+                <a href="#"><img src="./img/banner/banner3.jpg" alt=""> </a>
+                <h2>banner</h2>
+                <span>2024.01.01</span>
+              </div>
+              <div class="pf_thumb pf4 left">
+                <a href="#"><img src="./img/banner/banner4.jpg" alt=""> </a>
+                <div class="txt">
+                  <h2>banner</h2>
+                  <span>2024.01.01</span>
+                </div>
+              </div>
             </div>
-            <div class="pf_thumb pf3 brochure">
-              <a href="#"><img src="./img/brochure/brochure3.jpg" alt=""> </a>
-              <h2>브로셔-3</h2>
-              <span>2024.01.01</span>
-            </div>
-            <div class="pf_thumb pf4 left brochure">
-              <a href="#"><img src="./img/brochure/brochure4.jpg" alt=""> </a>
-              <div class="txt">
-                <h2>브로셔-4</h2>
+
+            <div class="leaflet pf_design">
+              <div class="pf_thumb pf1 ">
+                <a href="#"><img src="./img/leaflet/leaflet1.jpg" alt=""> </a>
+                <h2>leaflet</h2>
+                <span>2024.01.01</span>
+              </div>
+              <div class="pf_thumb pf2 ">
+                <a href="#"><img src="./img/leaflet/leaflet2.jpg" alt=""> </a>
+                <h2>leaflet</h2>
+                <span>2024.01.01</span>
+              </div>
+              <div class="pf_thumb pf3 ">
+                <a href="#"><img src="./img/leaflet/leaflet3.jpg" alt=""> </a>
+                <h2>leaflet</h2>
+                <span>2024.01.01</span>
+              </div>
+              <div class="pf_thumb pf4 right ">
+                <a href="#"><img src="./img/leaflet/leaflet4.jpg" alt=""> </a>
+                <div class="txt">
+                  <h2>leaflet</h2>
+                  <span>2024.01.01</span>
+                </div>
+              </div>
+
+              <div class="pf_thumb pf1 ">
+                <a href="#"><img src="./img/leaflet/leaflet5.jpg" alt=""> </a>
+                <h2>leaflet</h2>
+                <span>2024.01.01</span>
+              </div>
+              <div class="pf_thumb pf2 ">
+                <a href="#"><img src="./img/leaflet/leaflet6.jpg" alt=""> </a>
+                <h2>leaflet</h2>
+                <span>2024.01.01</span>
+              </div>
+              <div class="pf_thumb pf3 ">
+                <a href="#"><img src="./img/leaflet/leaflet7.jpg" alt=""> </a>
+                <h2>leaflet</h2>
                 <span>2024.01.01</span>
               </div>
             </div>
-            <div class="pf_thumb pf1 brochure">
-              <a href="#"><img src="./img/brochure/brochure5.jpg" alt=""> </a>
-              <h2>브로셔-5</h2>
-              <span>2024.01.01</span>
-            </div><div class="pf_thumb pf2 brochure">
-              <a href="#"><img src="./img/brochure/brochure2.jpg" alt=""> </a>
-              <h2>제목입니다</h2>
-              <span>2024.01.01</span>
-            </div>
-            <div class="pf_thumb pf2 brochure">
-              <a href="#"><img src="./img/brochure/brochure6.jpg" alt=""> </a>
-              <h2>제목입니다</h2>
-              <span>2024.01.01</span>
-            </div>
-            <div class="pf_thumb pf3 banner">
-              <a href="#"><img src="./img/banner/banner1.jpg" alt=""> </a>
-              <h2>제목입니다</h2>
-              <span>2024.01.01</span>
-            </div>
-            <div class="pf_thumb pf4 right banner">
-              <a href="#"><img src="./img/banner/banner1.jpg" alt=""> </a>
-              <div class="txt">
-                <h2>제목입니다</h2>
+
+            <div class="poster pf_design">
+
+              <div class="pf_thumb pf1 ">
+                <a href="#"><img src="./img/poster/poster2.jpg" alt=""> </a>
+                <h2>poster</h2>
                 <span>2024.01.01</span>
               </div>
-            </div>
-            <div class="pf_thumb pf1 banner">
-              <a href="#"><img src="./img/banner/banner2.jpg" alt=""> </a>
-              <h2>제목입니다</h2>
-              <span>2024.01.01</span>
-            </div>
-            <div class="pf_thumb pf2 banner">
-              <a href="#"><img src="./img/banner/banner3.jpg" alt=""> </a>
-              <h2>제목입니다</h2>
-              <span>2024.01.01</span>
-            </div>
-            <div class="pf_thumb pf3 banner">
-              <a href="#"><img src="./img/banner/banner4.jpg" alt=""> </a>
-              <h2>제목입니다</h2>
-              <span>2024.01.01</span>
-            </div>
-            <div class="pf_thumb pf4 left banner">
-              <a href="#"><img src="./img/poster/poster5.jpg" alt=""> </a>
-              <div class="txt">
-                <h2>제목입니다</h2>
-                <span>2024.01.01</span> 
-              </div>
-            </div>
-            <div class="pf_thumb pf1 banner">
-              <a href="#"><img src="./img/poster/poster6.jpg" alt=""> </a>
-              <h2>제목입니다</h2>
-              <span>2024.01.01</span>
-            </div>
-            <div class="pf_thumb pf2 banner">
-              <a href="#"><img src="./img/banner/banner5.jpg" alt=""> </a>
-              <h2>제목입니다</h2>
-              <span>2024.01.01</span>
-            </div>
-            <div class="pf_thumb pf3 leaflet">
-              <a href="#"><img src="./img/leaflet/leaflet4.jpg" alt=""> </a>
-              <h2>제목입니다</h2>
-              <span>2024.01.01</span>
-            </div>
-            <div class="pf_thumb pf4 right leaflet">
-              <a href="#"><img src="./img/leaflet/leaflet5.jpg" alt=""> </a>
-              <div class="txt">
-                <h2>제목입니다</h2>
+              <div class="pf_thumb pf2 ">
+                <a href="#"><img src="./img/poster/poster3.jpg" alt=""> </a>
+                <h2>poster</h2>
                 <span>2024.01.01</span>
               </div>
+              <div class="pf_thumb pf3 ">
+                <a href="#"><img src="./img/poster/poster4.jpg" alt=""> </a>
+                <h2>poster</h2>
+                <span>2024.01.01</span>
+              </div>
+              <div class="pf_thumb pf4 right ">
+                <a href="#"><img src="./img/poster/poster5.jpg" alt=""> </a>
+                <div class="txt">
+                  <h2>poster</h2>
+                  <span>2024.01.01</span>
+                </div>
+              </div>
+              <div class="pf_thumb pf4 left ">
+                <a href="#"><img src="./img/poster/poster1.jpg" alt=""> </a>
+                <div class="txt">
+                  <h2>poster</h2>
+                  <span>2024.01.01</span>
+                </div>
+              </div>
+
             </div>
+
+            <div class="pf_detail">
+              <div class="detail_box">
+                <img src="./img/brochure/brochure1_detail.png" alt="">
+                <button class="detail_close">x</button>
+              </div>
+            </div>
+
           </div>
         </div>
         <div class="line_text">
           <h3>PORTFOLIO</h3>
-            <span class="material-symbols-outlined">
-              filter_vintage
-            </span>
+          <span class="material-symbols-outlined">
+            filter_vintage
+          </span>
         </div>
+
       </section>
 
 
-      <section class="section5">
+      <section id="about" class="section5">
         <h3>About <br>Me</h3>
         <div class="resume_link">
           <a href="./etc/resume.hwp">♣</a>
@@ -252,9 +295,6 @@
       </section>
 
 
-
-
-
     </main>
 
     <footer>
@@ -263,11 +303,12 @@
   </div>
 
 </body>
+
 </html>
 
 
 
-      <!-- <section class="section4">
+<!-- <section class="section4">
         <div class="left">
           <img src="./img/mae-mu-8Vh6ulKc50o-unsplash.jpg" alt="">
           <img src="./img/alex-seinet-8dmtbpJJJ7k-unsplash.jpg" alt="">
