@@ -33,6 +33,27 @@ $(".allmenu .brochure").click(function(){
   $('.portfolio_img .brochure').css({display:"grid"})
   $('.portfolio_img .pf_design').not('.brochure').css({display:"none"})
 })
+
+// 글자색상바꾸기
+
+//ScrollTrigger 테스트
+gsap.registerPlugin(ScrollTrigger);
+
+const text = ".section2 strong";
+gsap.to(text, {
+  backgroundSize: "100%",
+  scrollTrigger: {
+    trigger: ".section2",
+    start: "20% bottom",
+    end: "bottom 90%",
+    scrub: true,
+    markers: true
+  },
+});
+
+
+
+
 // 스크롤 다운 헤더 스타일 변경
 $(window).scroll(function() {
   // console.log($(this).scrollTop())
@@ -128,8 +149,6 @@ function circle() {
 // $('.text_path').transition({ x: '40px' });
 
 
-//ScrollTrigger 테스트
-gsap.registerPlugin(ScrollTrigger)
 
 
 gsap.to(".line", {
@@ -140,7 +159,7 @@ gsap.to(".line", {
     end: "100% 80%",//끝 지점
     // end: "+=500"//시작 부분부터 500px까지 스크롤 한 후종료
     scrub: 1,//부드러운 스크러빙
-    markers: true,//개발가이드선
+    // markers: true,//개발가이드선
   },
 });
 
@@ -171,3 +190,16 @@ $('.hash_tag li').click(function() {
   $('.portfolio_img .pf_design').not('.' + secName).css({display:"none"})
   console.log(secName)
 })
+
+
+const about = ".section5 h3";
+gsap.to(about, {
+  transform: "0",
+  scrollTrigger: {
+    trigger: ".section5",
+    start: "20% bottom",
+    end: "bottom 90%",
+    scrub: true,
+    markers: true
+  },
+});
