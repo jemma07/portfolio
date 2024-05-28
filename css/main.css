@@ -473,17 +473,18 @@ body {
 
 .section4 .inner .button {
   display: flex;
-  width: 980px;
+  width: 900px;
   height: 60px;
   border: 1px solid #a1a1a1;
   border-radius: 100px;
   position: relative;
   margin: auto;
   margin-bottom: 200px;
+  gap: 25px;
 }
 
 .section4 .button .focus {
-  width: 180px;
+  width: 210px;
   height: 60px;
   background: #a1a1a1;
   position: absolute;
@@ -504,8 +505,9 @@ body {
 }
 
 .section4 .button .hash_tag li {
-  width: 180px;
+  width: 210px;
   cursor: pointer;
+  
 }
 
 
@@ -543,7 +545,7 @@ body {
 }
 .section4 .pf_design .pf4 a {
   display: block;
-  width: 85%;
+  width: 78%;
   /* border-radius: 200px; */
   object-fit: cover;
   overflow: hidden;
@@ -652,6 +654,7 @@ body {
 }
 
 
+
 /* 섹션 6 */
 
 .section6 {
@@ -660,31 +663,34 @@ body {
   font-size: 80px;
   font-weight: 500;
   font-family: 'GmarketSans';
-  position: relative;
+  
+
 }
 
 .section6 h4 {
-  display: flex;
+  display: block;
+  background: chartreuse;
+  position: absolute;
 }
 
-.section6 .marquee_wrap div {
+.section6 .marquee_wrap {
   white-space: nowrap;
-  animation: marquee_left 15s linear infinite;
+  animation: marquee_left 10s linear infinite;
   padding: 0 20px;
+  border: 3px solid yellow;
+  position: relative;
 }
-
 
 @keyframes marquee_left {
   0% {
     transform: translateX(0)
   }
-
   100% {
     transform: translateX(-100%)
   }
 }
 
-.section6 .marquee_right div {
+.section6 .marquee_right {
   animation: marquee_right 10s linear infinite;
 }
 

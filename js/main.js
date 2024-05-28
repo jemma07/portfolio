@@ -34,6 +34,7 @@ $(".allmenu .brochure").click(function(){
   $('.portfolio_img .pf_design').not('.brochure').css({display:"none"})
 })
 
+
 // 글자색상바꾸기
 
 //ScrollTrigger 테스트
@@ -101,21 +102,16 @@ function flow() {
   const flowWidth = flowElement.offsetWidth;
   const flowLength = windowWidth / flowWidth + 3;
 
-  flowContainer.forEach((elm) => {
-    elm.innerHTML = ''
+//   flowContainer.forEach((elm) => {
+//     elm.innerHTML = ''
     
-    for (let i = 2; i < flowLength; i++) {
-      const cloneElement = flowElement.cloneNode(true);
-      elm.appendChild(cloneElement);
-    }
-  })
-  // console.log(flowElement)
-  // flowContainer.innerHTML = ''
-    
-  // for (let i = 2; i < flowLength; i++) {
-  //   const cloneElement = flowElement.cloneNode(true);
-  //   document.querySelector(".marquee_wrap").appendChild(cloneElement);
-  // }
+//     for (let i = 2; i < flowLength; i++) {
+//       const cloneElement = flowElement.cloneNode(true);
+//       elm.appendChild(cloneElement);
+//     }
+//   })
+
+
 
 }
 
@@ -177,13 +173,21 @@ $('.detail_close').click(function() {
   $('.pf_detail').hide()
 })
 
+//외부영역 클릭시 팝업 닫기
+$(document).mouseup(function (e){
+  let layerpopup = $(".layer-popup");
+  if(layerpopup.has(e.target).length === 0){
+    layerpopup.removeClass("show");
+  }
+})
+
 
 //포트폴리오 탭
 $('.hash_tag li').click(function() {
   const i = $(this).index();
   const secName = $(this).attr('data-filter')
-  const w = 200;
-  const pos = 200 * i;
+  const w = 210;
+  const pos = 230 * i;
 
   $('.focus').animate({left: pos}, 300)
   $('.portfolio_img .' + secName).css({display:"grid"})
