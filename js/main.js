@@ -7,6 +7,7 @@
 
 // 전체메뉴
 //TEST
+//dasrd
 $(".util a").click(function(){
   $(this).toggleClass('util_allmeun');
   $('.allmenu_wrap').toggle()
