@@ -697,11 +697,10 @@ body {
   /* position: absolute; */
 }
 
-.section6 .marquee_wrap {
+/* .section6 .marquee_wrap {
   white-space: nowrap;
   animation: marquee_left 20s linear infinite;
   padding: 0px;
-  border: 3px solid yellow;
   position: relative;
 }
 
@@ -725,7 +724,7 @@ body {
   100% {
     transform: translateX(0);
   }
-}
+} */
 
 
 /* footer */
