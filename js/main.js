@@ -47,8 +47,8 @@ gsap.to(text, {
     trigger: ".section2",
     start: "20% bottom",
     end: "bottom 90%",
-    scrub: true,
-    markers: true
+    // scrub: true,
+    // markers: true
   },
 });
 
@@ -190,8 +190,8 @@ gsap.to(about, {
     trigger: ".section5",
     start: "-20% bottom",
     end: "bottom 90%",
-    scrub: true,
-    markers: true
+    // scrub: true,
+    // markers: true
   },
 });
 

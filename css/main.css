@@ -682,6 +682,7 @@ body {
 
 
 
+
 /* 섹션 6 */
 
 .section6 {
@@ -694,7 +695,9 @@ body {
 
 .section6 h4 {
   display: block;
-  /* position: absolute; */
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
 }
 
 /* .section6 .marquee_wrap {
