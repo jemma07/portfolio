@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/* 영문 폰트 */
+
+
+
+
+
+
+
+/* 한글 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'SBAggro'; */
+@import url('https://webfontworld.github.io/sandbox/SBAggro.css');
+
+/* font-family: 'GmarketSans'; */
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
+
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+/* pretnedard */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+@font-face {
+  font-family: 'NEXON Lv1 Gothic OTF';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SUITE-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* 어그로체 */
+@font-face {
+  font-family: 'SBAggroB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* g마켓 300 500 700*/
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* 
+- 프로젝트에 필요한 폰트만 설정하면 됨
+- 여러 프로젝트(작업파일, 포폴 파일)에서 사용할 폰트를 모두 모아서 필요할 때 연결
+*/

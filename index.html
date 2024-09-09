@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/main.css">
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marquee.js"></script>
+  
+  <script src="js/main.js" defer></script>
+
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <h1 class="logo">
+        <a href="#">
+          <span>박젬마</span>
+          <span>Bak jem ma Portfolio</span>
+        </a>
+      </h1>
+      <nav>
+        <!-- <ul id="gnb">
+          <li><a href="#">graphics</a></li>
+          <li><a href="#">illustration</a> </li>
+          <li><a href="#">typography</a></li>
+          <li><a href="#">social innovation</a></li>
+          <li><a href="#">ui/ux</a></li>
+        </ul> -->
+        <ul id="gnb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+        <div class="util">
+          <a href="#">
+            <span class="bar_1"></span>
+            <span class="bar_2"></span>
+          </a>
+        </div>
+        <div class="allmenu_wrap">
+          <ul class="allmenu">
+            <li> <a href="#home">Home</a></li>
+            <li class="brochure"> <a href="#portfolio">Portfolio</a>
+              <ul class="dep2">
+                <li class="brochure"><a href="#portfolio">편집디자인</a></li>
+                <li class="leaflet"><a href="#portfolio">리플렛</a></li>
+                <li class="promotion"><a href="#portfolio">홍보물디자인</a></li>
+                <li class="web"><a href="#portfolio">웹페이지</a></li>
+              </ul>
+            </li>
+            <li> <a href="#about">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- 본문 -->
+    <main id="mainbody">
+      <div class="container">
+        <section id="home" class="section1">
+          <h3>2024</h3>
+          <div class="text_path">
+            <p>Portfolio</p>
+          </div>
+
+        </section>
+
+
+        <section class="section2">
+          <div class="rightline"> 저는
+          </div>
+          <div class="leftline"><strong>새로운</strong>
+          </div>
+          <div><strong>도전</strong>을 <strong>시작</strong>하는</div>
+          <div><strong>박젬마</strong> <span>입니다</span> </div>
+        </section>
+      </div>
+
+      <!-- 원형 글자 돌아가는곳 -->
+      <section class="section3">
+        <div class="line_wrap">
+          <div class="line"></div>
+        </div>
+        <div class="circle">
+          <div class="c_line"> Portfolio
+            <span class="material-symbols-outlined">
+              step_into
+            </span>
+          </div>
+          <div class="circular-text-wrap">
+            <div class="circular-text-content">
+              <div class="circle_word">
+                <div class="circle_text">
+                  <p> PROJECTS-PORTFOLIO- </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section4" id="portfolio">
+        <div class="inner">
+          <div class="button">
+            <div class="focus"></div>
+            <ul class="hash_tag">
+              <li data-filter="brochure">#편집디자인</li>
+              <li data-filter="leaflet">#리플렛</li>
+              <li data-filter="promotion">#홍보물디자인</li>
+              <li data-filter="web">#웹페이지</li>
+            </ul>
+          </div>
+          <div class="portfolio_img">
+            <div class="pf_design brochure">
+              <div class="pf_thumb pf1">
+                <a href="#"><img src="./img/brochure/brochure1.jpg" alt=""> </a>
+                <h2>광주시교육청</h2>
+                <span>2011 / 무선제본 / 브로셔디자인</span>
+              </div>
+              <div class="pf_thumb pf2">
+                <a href="#"><img src="./img/brochure/brochure2.jpg" alt=""> </a>
+                <h2>광주시교육청</h2>
+                <span>2022 / 무선제본 / 브로셔디자인</span>
+              </div>
+              <div class="pf_thumb pf3">
+                <a href="#"><img src="./img/brochure/brochure3.jpg" alt=""> </a>
+                <h2>양만수산업협동조합</h2>
+                <span>2022 / 무선제본 / 브로셔디자인</span>
+              </div>
+              <div class="pf_thumb pf4 left">
+                <a href="#"><img src="./img/brochure/brochure4.jpg" alt=""> </a>
+                <div class="txt">
+                <h2>동명회</h2>
+                <span>2022 / 중철제본 / 브로셔디자인</span>
+                </div>
+              </div>
+              <div class="pf_thumb pf1">
+                <a href="#"><img src="./img/brochure/brochure5.jpg" alt=""> </a>
+                <h2>무진종합사회복지관</h2>
+                <span>2022 / 중철제본 / 브로셔디자인</span>
+              </div>
+              <div class="pf_thumb pf2">
+                <a href="#"><img src="./img/brochure/brochure6.jpg" alt=""> </a>
+                <h2>동명회</h2>
+                <span>2022 / 중철제본 / 브로셔디자인</span>
+              </div>
+              <div class="pf_thumb pf3">
+                <a href="#"><img src="./img/brochure/brochure7.jpg" alt=""> </a>
+                <h2>금파공업고등학교</h2>
+                <span>2022 / 중철제본 / 브로셔디자인</span>
+              </div>
+            </div>
+
+            <div class="pf_design leaflet">
+              <div class="pf_thumb pf1 ">
+                <a href="#"><img src="./img/leaflet/leaflet1.jpg" alt=""> </a>
+                <h2>광주시교육청</h2>
+                <span>2022 / 4단 대문접지 / 리플렛디자인</span>
+              </div>
+              <div class="pf_thumb pf2 ">
+                <a href="#"><img src="./img/leaflet/leaflet2.jpg" alt=""> </a>
+                <h2>광주시교육청</h2>
+                <span>2021 / 3단 접지 / 리플렛디자인</span>
+              </div>
+              <div class="pf_thumb pf3 ">
+                <a href="#"><img src="./img/leaflet/leaflet3.jpg" alt=""> </a>
+                <h2>서구노인복지관</h2>
+                <span>2021 / 3단 접지 / 리플렛디자인</span>
+              </div>
+              <div class="pf_thumb pf4 right ">
+                <a href="#"><img src="./img/leaflet/leaflet4.jpg" alt=""> </a>
+                <div class="txt">
+                  <h2>영산강유역환경청</h2>
+                  <span>2022 / 4단 대문접지 / 리플렛디자인</span>
+                </div>
+              </div>
+
+              <div class="pf_thumb pf1 ">
+                <a href="#"><img src="./img/leaflet/leaflet5.jpg" alt=""> </a>
+                <h2>작은음악회</h2>
+                <span>2019 / 3단 접지 / 리플렛디자인</span>
+              </div>
+              <div class="pf_thumb pf2 ">
+                <a href="#"><img src="./img/leaflet/leaflet6.jpg" alt=""> </a>
+                <h2>월드비전</h2>
+                <span>2022 / 3단 접지 / 리플렛디자인</span>
+              </div>
+            </div>
+
+            <div class="pf_design promotion">
+              <div class="pf_thumb pf1">
+                <a href=""><img src="./img/promotion/newspaper1.jpg" alt=""> </a>
+                <h2>송원여고</h2>
+                <span>2020 / 타블로이드(변형) / 신문디자인</span>
+              </div>
+              <div class="pf_thumb pf2">
+                <a href="#"><img src="./img/promotion/banner2.jpg" alt=""> </a>
+                <h2>엔제리너스</h2>
+                <span>2020 ~ 2023 / 배너디자인</span>
+              </div>
+              <div class="pf_thumb pf3">
+                <a href="#"><img src="./img/promotion/poster3.jpg" alt=""> </a>
+                <h2>롯데시네마 외</h2>
+                <span>2018 ~ 2023 / 포스터디자인</span>
+              </div>
+              <div class="pf_thumb pf4 left">
+                <a href="#"><img src="./img/promotion/sticker4.jpg" alt=""> </a>
+                <div class="txt">
+                  <h2>아리엣홈</h2>
+                  <span>2023 / 스티커디자인</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pf_design web">
+              <div class="pf_thumb pf1">
+                <a href=""><img src="./img/web/web1.jpg" alt=""> </a>
+                <h2>법무법인 한결</h2>
+                <span>리디자인</span>
+              </div>
+              <div class="pf_thumb pf2">
+                <a href="#"><img src="./img/web/web2.jpg" alt=""> </a>
+                <h2>까사리빙</h2>
+                <span>리디자인</span>
+              </div>
+              <div class="pf_thumb pf3">
+                <a href="#"><img src="./img/web/web3.jpg" alt=""> </a>
+                <h2>지인</h2>
+                <span>리디자인</span>
+              </div>
+            </div>
+
+            <!-- 팝업창 -->
+            <div class="pf_detail">
+              <div class="detail_box">
+                <img src="./img/brochure/brochure1_detail.png" alt="">
+                <button class="detail_close">X</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- <div class="line_text marquee_wrap">
+          <ul class="line_text2">
+            <li>
+              <h3>PORTFOLIO</h3>
+              <span class="material-symbols-outlined">
+                filter_vintage
+              </span>
+            </li>
+          </ul>
+        </div>
+         -->
+      </section>
+
+      <!-- <section>
+        <a href="./hangyeol/index.html" target="_blank">법무법인 한결 리뉴얼</a>
+      </section> -->
+
+
+      <section id="about" class="section5">
+        <h3>About <br>Me</h3>
+        <div class="resume_link">
+          <a href="./etc/resume.hwp">♣</a>
+        </div>
+      </section>
+
+
+      <section class="section6">
+        <hr>
+        <h4 class="marquee_wrap marquee_left">
+          <div>bak jem ma</div>
+        </h4>
+
+        <hr>
+        <h4 class="marquee_wrap marquee_right">
+          <div>1985. 08. 17</div>
+        </h4>
+        <hr>
+
+        <h4 class="marquee_wrap marquee_left">
+          <div>apearl07@naver.com</div>
+        </h4>
+        <hr>
+      </section>
+
+
+    </main>
+
+    <footer>
+      <p>&copy; PJM. All Rights Reserved</p>
+    </footer>
+  </div>
+
+</body>
+
+</html>
+
+
+
+<!-- <section class="section4">
+        <div class="left">
+          <img src="./img/mae-mu-8Vh6ulKc50o-unsplash.jpg" alt="">
+          <img src="./img/alex-seinet-8dmtbpJJJ7k-unsplash.jpg" alt="">
+          <img src="./img/micheile-henderson-WP81F5Tj2ME-unsplash.jpg" alt="">
+        </div>
+        <div class="right">
+          <span>
+            bak jem ma <br>
+            portfolio
+          </span>
+          <span>
+            bak jem ma portfolio
+          </span>
+          <span>
+            미리보기
+          </span>
+        </div>
+      </section> -->
